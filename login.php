@@ -13,7 +13,17 @@
 		if($ans = $req->fetch()){
 			$_SESSION['connected'] = 1;
 			$_SESSION['login'] = $_POST['login'];
+			if($ans.['isAdmin'] == true)
+			{
+				$_SESSION['admin'] = 1;
+			}
+			else
+			{
+				$_SESSION['admin'] = 0;
+			}
 		}
+		
+		$req->closeCursor();
 		
 	}
 	else {
