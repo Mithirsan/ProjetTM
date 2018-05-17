@@ -55,11 +55,6 @@ echo   ' <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-
                             <input class="btn" type="submit" value="'.$_SESSION['login'].'">
                         </form>
                     </li>
-					<li class="btn">
-                        <form action="research.php" methode="post">
-                            <input class="btn" type="submit" value="Research">
-                        </form>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -101,11 +96,6 @@ echo   '<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-t
                     </li>
                     <li class="btn">
                             <a class="btn" value="Log in" data-toggle="modal" data-target="#myModal">Log in</a>
-                    </li>
-					<li class="btn">
-                        <form action="research.php" methode="post">
-                            <input class="btn" type="submit" value="Research">
-                        </form>
                     </li>
                 </ul>
             </div>
