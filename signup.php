@@ -1,21 +1,18 @@
 <!DOCTYPE html>
+<?php include 'admin.php' ?>
 <HTML lang="en">
     <HEAD>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" type="text/css" href="CSS/bootstrap.css" >
-        <script type="text/javascript" src="JS/jquery-3.3.1.js">
-
-		
-		
-		</script>
+        <script type="text/javascript" src="JS/jquery-3.3.1.js"></script>
         <script type="text/javascript" src="JS/popper.js"></script>
         <script type="text/javascript" src="JS/toottip.js"></script>
         <script type="text/javascript" src="JS/bootstrap.js"></script>
         <script type="text/javascript" src="JS/pswd/password-score.js"></script>
         <script type="text/javascript" src="JS/pswd/password-score-options.js"></script>
         <script type="text/javascript" src="JS/bootstrap-strength-meter.js"></script>
-        <script type="text/javascript" src="JS/pswd/strength.js"></script>
+        <script type="text/javascript" src="JS/script.js"></script>
         
         <!--FAVICON AND TITTLE -->
         <link rel="icon" type="image/png" href="ressources/images/logo.png" />
@@ -58,9 +55,6 @@
             <div class="invalid-feedback" style="width: 100%;">
               Username is required, maybe this username is already used.
             </div>
-
-            <div class="mb-3">
-                <button type="submit" class="btn" id="submit" name="submit">
           </div>
         </div>
 
@@ -76,26 +70,11 @@
           <div>
             <input type="password" class="form-control" id="password" placeholder="Password" required name="password" pattern=".{8,32}">
           </div>
-          <div class="form-group">
-            <label for="progress-bar-container">Strength</label>
-            <div class="" id="progress-bar-container"></div>
-          </div>
           <div class="invalid-feedback">
             Please enter a password, between 8 and 32 chars, for more security use Captal, number and special chars.
           </div>
         </div>
         <div class="mb-3">
-          <label for="pwdc">Confirm password</label><span> *</span>
-          <input type="password" class="form-control" id="pwdc" placeholder="Confirm password" required>
-          <div class="invalid-feedback">
-            Please confirm your password.
-          </div>
-        </div>
-        <div class="mb-3">
-            <label for="countries_phone">Country</label>
-            <select id="countries_phone" class="form-control bfh-countries" data-country="US"></select>
-            <div class="bfh-selectbox bfh-countries" data-country="US" data-flags="true">
-            </div>
             <label for="phoneNum">Phone Number</label>
             <input type="text" class="form-control bfh-phone" data-country="countries_phone" style="">
         </div>

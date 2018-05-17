@@ -1,18 +1,17 @@
 <?php
-    if(!(isset($_SESSION['isAdmin']))){
+    session_start();
+?>
+
+<?php
+    if(($_SESSION['admin']==0)){
         echo '<?php include "navbar.php";?>
             <div class="container">
                 <div class="row">
                     <div class="container">
-                        <ul class="xs-12 sm-6 md-4 lg-3">
+                        <ul class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                             <li class="btn">
                                 <img src="DATA/'.$_SESSION['login'].'/profile.png">
                                 <h1>'.$_SESSION['login'].'</h1>
-                            </li>
-                            <li class="btn">
-                                <form action="actual.php" method="get">
-                                    <input class="btn" type="submit" value="Actual rents">
-                                </form>
                             </li>
                             <li class="btn">
                                 <form action="historique.php" method="get">
@@ -25,10 +24,12 @@
                                 </form>
                             </li>
                             <li class="btn">
-                                <a>Deconnexion</a>
+                                <form action="" method="get">
+                                    <input class="btn" type="submit" value="Unlog">
+                                </form>
                             </li>
                         </ul>
-                        <div class="xs-12 sm-6 md-8 lg-9">
+                        <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9">
                             Contenu
                         </div>
                     </div>
@@ -40,15 +41,10 @@
             <div class="container">
                 <div class="row">
                     <div class="container">
-                        <ul class="xs-12 sm-6 md-4 lg-3">
+                        <ul class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                             <li class="btn">
                                 <img src="DATA/'.$_SESSION['login'].'/profile.png">
                                 <h1>'.$_SESSION['login'].'</h1>
-                            </li>
-                            <li class="btn">
-                                <form action="actual.php" method="get">
-                                    <input class="btn" type="submit" value="Actual rents">
-                                </form>
                             </li>
                             <li class="btn">
                                 <form action="historique.php" method="get">
@@ -71,11 +67,13 @@
                                 </form>
                             </li>
                             <li class="btn">
-                                <a>Deconnexion</a>
+                                <form action="unlog.php" method="get">
+                                    <input class="btn" type="submit" value="Unlog">
+                                </form>
                             </li>
                         </ul>
                         </div>
-                        <div class="xs-12 sm-6 md-8 lg-9">
+                        <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9">
                             Contenu
                         </div>
                     </div>
