@@ -68,7 +68,7 @@
                             </li>
                             <li class="btn">
                                 <form action="unlog.php" method="get">
-                                    <input class="btn" type="submit" value="Unlog">
+                                    <input class="btn" type="submit" value="Logout">
                                 </form>
                             </li>
                         </ul>
