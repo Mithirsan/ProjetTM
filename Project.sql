@@ -27,6 +27,7 @@ CREATE TABLE IF NOT EXISTS rents(
 	location VARCHAR(80) NOT NULL,
 	country VARCHAR(50) NOT NULL,
 	price NUMERIC(7, 2) NOT NULL,
+	name VARCHAR (80) NOT NULL,
 	isLocated BOOLEAN NOT NULL DEFAULT FALSE,
 	dateBegin DATE,
 	dateEnd DATE,
@@ -64,8 +65,6 @@ CREATE TABLE IF NOT EXISTS cities (
   state_id int(11) NOT NULL,
   PRIMARY KEY (id)
 ) ENGINE = InnoDB;
-
-
 
 --Sign up
 INSERT INTO users(username, password, mail, birthDate, firstName, lastName) VALUES

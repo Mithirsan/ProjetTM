@@ -2,9 +2,10 @@
     session_start();
 ?>
 
+<?php include "navbar.php";?>
 <?php
     if(($_SESSION['admin']==0)){
-        echo '<?php include "navbar.php";?>
+        echo '
             <div class="container">
                 <div class="row">
                     <div class="container">
@@ -14,8 +15,18 @@
                                 <h1>'.$_SESSION['login'].'</h1>
                             </li>
                             <li class="btn">
+                                <form action="myrents.php" method="get">
+                                    <input class="btn" type="submit" value="My rents">
+                                </form>
+                            <li>
+                            <li class="btn">
                                 <form action="account.php" method="get">
                                     <input class="btn" type="submit" value="Settings">
+                                </form>
+                            </li>
+                            <li class="btn">
+                                <form action="rent.php" method="get">
+                                    <input class="btn" type="submit" value="Add a rent">
                                 </form>
                             </li>
                             <li class="btn">
@@ -32,7 +43,7 @@
                 </div>
             </div>';
     }else{
-        echo '<?php include "navbar.php";?>
+        echo '
             <div class="container">
                 <div class="row">
                     <div class="container">
@@ -43,17 +54,17 @@
                             </li>
                             <li class="btn">
                                 <form action="historic.php" method="get">
-                                    <input class="btn" type="submit" value="Rents history">
+                                    <input class="btn" type="submit" value="Locataed rents">
+                                </form>
+                            </li>
+                            <li class="btn">
+                                <form action="rent.php" method="get">
+                                    <input class="btn" type="submit" value="Add a rent">
                                 </form>
                             </li>
                             <li class="btn">
                                 <form action="confirmRents.php" method="get">
                                     <input class="btn" type="submit" value="Rents confimration">
-                                </form>
-                            </li>
-                            <li class="btn">
-                                <form action="contactMsg.php" method="get">
-                                    <input class="btn" type="submit" value="Contact message">
                                 </form>
                             </li>
                             <li class="btn">
