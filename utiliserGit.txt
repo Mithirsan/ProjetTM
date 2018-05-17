@@ -1,0 +1,3 @@
+git add doc
+git commit -m 'message'
+git push origine master
