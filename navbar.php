@@ -46,11 +46,6 @@ echo   ' <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-
                         </form>
                     </li>
                     <li class="btn">
-                        <form action="about.php" method="post">
-                            <input class="btn" type="submit" value="About">
-                        </form>
-                    </li>
-                    <li class="btn">
                         <form action="user.php" methode="post">
                             <input class="btn" type="submit" value="'.$_SESSION['login'].'">
                         </form>
@@ -82,11 +77,6 @@ echo   '<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-t
                     <li class="btn">
                         <form action="contact.php" method="post">
                             <input class="btn" type="submit" value="Contact">
-                        </form>
-                    </li>
-                    <li class="btn">
-                        <form action="about.php" method="post">
-                            <input class="btn" type="submit" value="About">
                         </form>
                     </li>
                     <li class="btn">

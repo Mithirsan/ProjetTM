@@ -14,18 +14,13 @@
                                 <h1>'.$_SESSION['login'].'</h1>
                             </li>
                             <li class="btn">
-                                <form action="historique.php" method="get">
-                                    <input class="btn" type="submit" value="Rents history">
-                                </form>
-                            </li>
-                            <li class="btn">
                                 <form action="account.php" method="get">
                                     <input class="btn" type="submit" value="Settings">
                                 </form>
                             </li>
                             <li class="btn">
-                                <form action="" method="get">
-                                    <input class="btn" type="submit" value="Unlog">
+                                <form action="unlog.php" method="get">
+                                    <input class="btn" type="submit" value="Logout">
                                 </form>
                             </li>
                         </ul>
@@ -47,7 +42,7 @@
                                 <h1>'.$_SESSION['login'].'</h1>
                             </li>
                             <li class="btn">
-                                <form action="historique.php" method="get">
+                                <form action="historic.php" method="get">
                                     <input class="btn" type="submit" value="Rents history">
                                 </form>
                             </li>
