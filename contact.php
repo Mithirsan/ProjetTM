@@ -7,7 +7,6 @@
         <script src="JS/jquery-3.3.1.js"></script>
         <link rel="stylesheet" href="CSS/bootstrap.css">
         <script src="JS/bootstrap.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/CSS/styleContact.css">
         <script src="/JS/scriptContact.js"></script>
     </head>
@@ -41,7 +40,7 @@
                             </div>
                             <div class="col-md-12">
                                 <label for="message">Message <span class="blue">*</span></label>
-                                <textarea id="message" name="message" class="form-control" placeholder="Tell us ..." rows="4"></textarea>
+                                <textarea id="message" name="message" class="form-control" placeholder="Tell us ... (max 2000 character)" rows="4" maxlength="2000"></textarea>
                                 <p class="comments"></p>
                             </div>
                             <div class="col-md-12">
